@@ -22,6 +22,7 @@ class UserValidation extends Validation
             new PresenceOf(
                 [
                     'message' => 'The e-mail is required',
+                    // 'cancelOnFail' => true,
                 ]
             )
         );
