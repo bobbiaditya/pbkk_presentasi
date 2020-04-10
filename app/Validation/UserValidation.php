@@ -35,4 +35,16 @@ class UserValidation extends Validation
             )
         );
     }
+    // public function beforeValidation()
+    // {
+    //     // echo('before validation<br>');
+    //     echo('return false sehingga validation tidak dilakukan');
+    //     return false;
+    // }
+
+    // public function afterValidation($data, $entity, $messages)
+    // {
+    //     // ... Add additional messages or perform more validations
+    //     echo('masuk after validation<br>');
+    // }
 }
