@@ -9,7 +9,7 @@ class UserValidation extends Validation
     public function initialize()
     {
         $this->add(
-            'name',
+            'username',
             new PresenceOf(
                 [
                     'message' => 'The name is required',

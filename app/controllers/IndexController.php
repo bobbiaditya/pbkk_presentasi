@@ -1,12 +1,27 @@
 <?php
 
+include __DIR__ . "/../Validation/";
 use Phalcon\Mvc\Controller;
 
 class IndexController extends Controller
 {
     public function indexAction()
     {
-        // return 'Jihan Cepat Sembuh';
+
+    }
+
+    public function registerAction()
+    {
+        $validation= new UserValidation();
+        $messages = $validation->validate($_POST);
+        if (count($messages)) {
+            foreach ($messages as $message) {
+                echo $message, '<br>';
+            }
+        }
+        else{
+            $this->response->redirect('/');
+        }
     }
 
     public function sayHalloAction()

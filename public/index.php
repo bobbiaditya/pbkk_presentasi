@@ -18,6 +18,8 @@ $loader->registerDirs(
         APP_PATH . '/config/',
         APP_PATH . '/controllers/',
         APP_PATH . '/models/',
+        APP_PATH . '/validation/',
+        APP_PATH . '/views/',
     ]
 );
 

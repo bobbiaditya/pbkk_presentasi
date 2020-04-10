@@ -12,6 +12,14 @@ $router->add(
     ]
 );
 
+$router->add(
+    '/register',
+    [
+        'controller' => 'Index',
+        'action'     => 'register',
+    ]
+);
+
 // $router->add(
 //     '/invoices/list/{page}/{perPage}',
 //     [
