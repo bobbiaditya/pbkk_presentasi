@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . "/../Validation/";
+include __DIR__ . "/../validation/";
 use Phalcon\Mvc\Controller;
 
 class IndexController extends Controller
