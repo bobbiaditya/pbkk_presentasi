@@ -4,13 +4,13 @@ use Phalcon\Mvc\Router;
 
 $router = new Router();
 
-// $router->add(
-//     '/',
-//     [
-//         'controller' => 'Index',
-//         'action'     => 'sayHallo',
-//     ]
-// );
+$router->add(
+    '/',
+    [
+        'controller' => 'Index',
+        // 'action'     => 'sayHallo',
+    ]
+);
 
 // $router->add(
 //     '/invoices/list/{page}/{perPage}',
@@ -20,12 +20,12 @@ $router = new Router();
 //     ]
 // );
 
-$router->add(
-    '/invoices/view/{invoiceId}/{filter}',
-    [
-        'controller' => 'Invoices',
-        'action'     => 'view',
-    ]
-);
+// $router->add(
+//     '/invoices/view/{invoiceId}/{filter}',
+//     [
+//         'controller' => 'Invoices',
+//         'action'     => 'view',
+//     ]
+// );
 
 return $router;

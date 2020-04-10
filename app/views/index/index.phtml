@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+
+<body>
+    <h1>Sign Up Form</h1>
+    <form action="{{('register')}}" method="POST" enctype="multipart/form-data">
+        <label>username</label>
+        <input type="text" name="username">
+        <br><br>
+        <label>email</label>
+        <input type="text" name="email">
+        <br><br>
+        <label>telephone</label>
+        <input type="text" name="telephone">
+        <br><br>
+        <label>photo</label>
+        <input type="file" name="photo">
+        <br><br>
+        <label>password</label>
+        <input type="password" name="password">
+        <br><br>
+        <input type="submit" name="submit">
+    </form>
+</body>
+
+</html>

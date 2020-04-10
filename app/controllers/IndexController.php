@@ -6,7 +6,7 @@ class IndexController extends Controller
 {
     public function indexAction()
     {
-        return 'Jihan Cepat Sembuh';
+        // return 'Jihan Cepat Sembuh';
     }
 
     public function sayHalloAction()
