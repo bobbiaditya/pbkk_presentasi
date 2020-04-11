@@ -16,8 +16,6 @@ class IndexController extends Controller
     {
         $validation= new UserValidation();
         $messages = $validation->validate($_POST);
-        // $validation->setFilters('username', 'trim');
-        // $validation->setFilters('email', 'trim');
         if (count($messages)) {
             foreach ($messages as $message) {
                 echo $message, '<br>';
@@ -29,10 +27,10 @@ class IndexController extends Controller
             // $filteredMessages = $messages->filter('username');
 
             // foreach ($filteredMessages as $message) {
-                //     echo $message, '<br>';
-                // }
+            //         echo $message, '<br>';
+            //     }
             }
-            else{
+        else {
             $this->response->redirect('/');
         }
     }

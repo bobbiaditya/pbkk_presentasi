@@ -35,6 +35,8 @@ class UserValidation extends Validation
                 ]
             )
         );
+        $this->setFilters('username', 'trim');
+        $this->setFilters('email', 'trim');
     }
     // public function beforeValidation()
     // {
@@ -48,4 +50,5 @@ class UserValidation extends Validation
     //     // ... Add additional messages or perform more validations
     //     echo('masuk after validation<br>');
     // }
+    
 }
