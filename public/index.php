@@ -41,10 +41,10 @@ $container->set(
     function () {
         $url = new Url();
         $url->setBaseUri('/');
+        
         return $url;
     }
 );
-
 $container->set(
     'router',
     function () {
@@ -66,3 +66,4 @@ try {
 } catch (\Exception $e) {
     echo 'Exception: ', $e->getMessage();
 }
+

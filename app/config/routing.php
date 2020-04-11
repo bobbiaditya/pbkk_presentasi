@@ -8,7 +8,7 @@ $router->add(
     '/',
     [
         'controller' => 'Index',
-        // 'action'     => 'sayHallo',
+        // 'action'     => 'url',
     ]
 );
 

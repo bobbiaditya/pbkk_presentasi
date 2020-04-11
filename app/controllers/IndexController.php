@@ -2,14 +2,16 @@
 
 include __DIR__ . "/../validation/";
 use Phalcon\Mvc\Controller;
+use Phalcon\Url;
 
 class IndexController extends Controller
 {
+    
     public function indexAction()
     {
-
+        
     }
-
+    
     public function registerAction()
     {
         $validation= new UserValidation();
@@ -19,16 +21,36 @@ class IndexController extends Controller
         if (count($messages)) {
             foreach ($messages as $message) {
                 echo $message, '<br>';
+                // echo 'Message:', $message->getMessage(), '<br>';
+                // echo 'Field: ', $message->getField(), '<br>';
+                // echo 'Type: ', $message->getType(), '<br>';
             }
-        }
-        else{
+            
+            // $filteredMessages = $messages->filter('username');
+
+            // foreach ($filteredMessages as $message) {
+                //     echo $message, '<br>';
+                // }
+            }
+            else{
             $this->response->redirect('/');
         }
     }
-
-    public function sayHalloAction()
+    
+    public function urlAction()
     {
-        echo 'Anda masuk ke sayHallo action';
-        return '<h1>Haloooooo!!!<h1>';
+        // $url = new Url();
+        // $url->setBaseUri('/home/');
+        // echo $url->getBaseUri(), '<br>'; 
+        // echo $url->get('/edit/1'), '<br>';
+
+        
+        // $url = new Url();
+        // $url->setStaticBaseUri('/signup.com/');
+        // echo $url->getStaticBaseUri(), '<br>'; 
+        
+
+        // $url = new Url();
+        // echo $url->getStatic("img/wallpaper.jpg"), '<br>'; 
     }
 }
