@@ -20,7 +20,7 @@
         <input type="submit" name="submit">
     </form>
     <br>
-    <button type="button"><a href="{{ url('home') }}">Home</a></button> 
+    <button type="button"><a href="<?= $this->url->get('home') ?>">Home</a></button> 
         
 </body>
 
